@@ -1,10 +1,9 @@
-# @title Solución
 import numpy as np
 
 # Crear un tablero de juego 5x5
 def crearTablero():
-tablero = np.zeros((5, 5))
-return tablero
+    tablero = np.zeros((5,5))
+    return tablero
 
 # Colocar tres barcos en posiciones aleatorias
 
@@ -15,3 +14,9 @@ return tablero
 
 
 # Prueba la función con algunas coordenadas
+
+
+#Programa>> a JUGAR!
+tab = crearTablero()
+print("Tablero INICIAL\n")
+print(tab)
