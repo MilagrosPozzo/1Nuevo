@@ -1,15 +1,19 @@
 import numpy as np
 
+TAM = 5
 # Crear un tablero de juego 5x5
-def crearTablero():
-    tablero = np.zeros((5,5))
+def crearTablero(tam):
+    tablero = np.zeros((tam , tam))
     return tablero
 
 # Colocar tres barcos en posiciones aleatorias
-def ColocarBarcos(tablero):
-    x, y = np.random.randint(0, 5, size=2)
-    print(f"los valores de X e Y son {x} , {y}")
-    tablero[x,y]=1
+def ColocarBarcos(tablero , cant):
+    while cant != 0:
+      x, y = np.random.randint(0, 5, size=2)
+         if tablero[x , y] == 0
+            tablero[x,y] = 1
+             cant -= 1
+    return tablero
 
 # Función para verificar si hay un barco o agua en las coordenadas dadas
 
@@ -18,7 +22,7 @@ def ColocarBarcos(tablero):
 
 
 #Programa>> a JUGAR!
-tabreal = crearTablero()
+tabreal = crearTablero(TAM)
 print("Tablero INICIAL\n")
 print(tabreal)
 
