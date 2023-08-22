@@ -1,0 +1,7 @@
+from colorama import Fore, Back, Style
+import random
+
+texto = "hola"
+
+print(texto)
+print(Fore.CYAN + texto)
