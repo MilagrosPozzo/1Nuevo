@@ -32,5 +32,9 @@ class Novelista(Escritor):
         super().__init__(nombre, genero)
         self.cant_novelas = cant_novelas
 
-novelista = Novelista("Gabriel García Márquez", "Realismo Mágico", "51")
-print(novelista.nombre, novelista.genero, novelista.cant_novelas)
+def main():
+    novelista = Novelista("Gabriel García Márquez", "Realismo Mágico", "51")
+    print(novelista.nombre, novelista.genero, novelista.cant_novelas)
+
+if __name__ == "__main__":
+    main()
