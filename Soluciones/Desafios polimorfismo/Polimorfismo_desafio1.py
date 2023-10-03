@@ -9,12 +9,13 @@ class Musico:
         self.instrumento = instrumento
 
 class Guitarrista(Musico):
-    def __init__(self, instrumento, cuerdas):
+    def __init__(self, instrumento):
         super().__init__(instrumento)
-        self.cuerdas = cuerdas
-
 
 class Baterista(Musico):
-    def __init__(self, instrumento, genero):
-        super().__init__(instrumento)
-        self.baquetas = baquetas
+    def __init__(self, instrumento):
+       super().__init__(instrumento)
+
+mibaterista = Baterista("Bateria")
+miguitarrista = Guitarrista ("Guitarra")
+print(mibaterista.instrumento, miguitarrista.instrumento)
