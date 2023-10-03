@@ -16,9 +16,12 @@ class Baterista(Musico):
     def instrumento(self):
         return "toca la bateria"
 
+def main():
+    miguitarrista = Guitarrista()
+    mibaterista = Baterista()
 
-miguitarrista = Guitarrista()
-mibaterista = Baterista()
+    print(mibaterista.instrumento())
+    print(miguitarrista.instrumento())
 
-print(mibaterista.instrumento())
-print(miguitarrista.instrumento())
+if __name__ =="__main__":
+    main()
