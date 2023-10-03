@@ -5,17 +5,20 @@ Instancia objetos de estas clases y demuestra el polimorfismo.
 """
 
 class Musico:
-    def __init__(self, instrumento):
-        self.instrumento = instrumento
+    def instrumento(self):
+        pass
 
 class Guitarrista(Musico):
-    def __init__(self, instrumento):
-        super().__init__(instrumento)
+    def instrumento(self):
+        return "toca la guitarra"
 
 class Baterista(Musico):
-    def __init__(self, instrumento):
-       super().__init__(instrumento)
+    def instrumento(self):
+        return "toca la bateria"
 
-mibaterista = Baterista("Bateria")
-miguitarrista = Guitarrista ("Guitarra")
-print(mibaterista.instrumento, miguitarrista.instrumento)
+
+miguitarrista = Guitarrista()
+mibaterista = Baterista()
+
+print(mibaterista.instrumento())
+print(miguitarrista.instrumento())
